@@ -23,6 +23,9 @@ NAD_BUILD_TYPE := OFFICIAL
 # Pixel Charging
 USE_PIXEL_CHARGING := true
 
+# QuickTAP
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Device Info
 PRODUCT_NAME := nad_twolip
 PRODUCT_DEVICE := twolip
