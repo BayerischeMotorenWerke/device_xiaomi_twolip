@@ -8,14 +8,23 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common NusantaraProject-ROM stuff
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 # Inherit from twolip device
 $(call inherit-product, device/xiaomi/twolip/device.mk)
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Official
+NAD_BUILD_TYPE := OFFICIAL
+
+# Pixel Charging
+USE_PIXEL_CHARGING := true
+
 # Device Info
-PRODUCT_NAME := lineage_twolip
+PRODUCT_NAME := nad_twolip
 PRODUCT_DEVICE := twolip
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 6 Pro

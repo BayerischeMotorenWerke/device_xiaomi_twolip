@@ -6,10 +6,16 @@
     "revision"   : "lineage-19.1"
  },
  {
-    "repository" : "crdroidandroid/android_vendor_xiaomi_twolip",
+    "repository" : "NusantaraROM-Devices/vendor_xiaomi_twolip",
     "target_path": "vendor/xiaomi/twolip",
     "remote"     : "github",
     "revision"   : "12.1"
+ },
+ {
+    "repository" : "LineageOS/android_kernel_xiaomi_sdm660",
+    "target_path": "kernel/xiaomi/sdm660",
+    "remote"     : "github",
+    "revision"   : "lineage-19.1"
  },
  {
     "repository" : "LineageOS/android_hardware_qcom_display",

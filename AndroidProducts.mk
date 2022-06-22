@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_twolip.mk
+    $(LOCAL_DIR)/nad_twolip.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_twolip-user \
-    lineage_twolip-userdebug \
-    lineage_twolip-eng
+    nad_twolip-user \
+    nad_twolip-userdebug \
+    nad_twolip-eng
