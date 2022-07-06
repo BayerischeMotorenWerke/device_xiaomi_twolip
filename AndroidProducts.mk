@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_twolip.mk
+    $(LOCAL_DIR)/xdroid_twolip.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_twolip-user \
-    nad_twolip-userdebug \
-    nad_twolip-eng
+    xdroid_twolip-user \
+    xdroid_twolip-userdebug \
+    xdroid_twolip-eng

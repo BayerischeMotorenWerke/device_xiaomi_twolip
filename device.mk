@@ -18,7 +18,7 @@ PRODUCT_SHIPPING_API_LEVEL := 27
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-nad
+    $(DEVICE_PATH)/overlay-xdroid
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay

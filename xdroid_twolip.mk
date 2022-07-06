@@ -8,26 +8,20 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common NusantaraProject-ROM stuff
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-
 # Inherit from twolip device
 $(call inherit-product, device/xiaomi/twolip/device.mk)
 
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# Official
-NAD_BUILD_TYPE := OFFICIAL
-
-# Pixel Charging
-USE_PIXEL_CHARGING := true
-
-# QuickTAP
+# Inherit some common xdroidsp stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT := 1080
+XDROID_MAINTAINER := BayerischeMotorenWerke
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device Info
-PRODUCT_NAME := nad_twolip
+PRODUCT_NAME := xdroid_twolip
 PRODUCT_DEVICE := twolip
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 6 Pro
@@ -35,9 +29,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR_PRODUCT_NAME := tulip
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Boot Animation
-TARGET_BOOT_ANIMATION_RES := 1080
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
